@@ -1,10 +1,6 @@
 ############################
-# Social Media Credentials #
+# Database Scripts #
 ############################
-TwitterCredentials.cs
-
-###############
-# Directories #
-###############
-bin/
-obj/
+DbViews.sql
+creation-script.sql
+Dockerfile

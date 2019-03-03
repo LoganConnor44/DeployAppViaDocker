@@ -1,15 +1,15 @@
 # Maintaining An Image And Running It As A Container
 
-## How To Build Docker Image And Version It
+## How To Build Docker Image
 1. ```cd``` into the directory with a ```Dockerfile```
 2. Run the command in CLI 
     ```bash
-    docker build --tag <YOUR_IMAGE_NAME_HERE>:<VERSION_NUM> .
+    docker build --tag <YOUR_IMAGE_NAME_HERE> .
     ```
     * This tells Docker to build an image with the name <YOUR_IMAGE_NAME_HERE> from this current directory.
     * https://docs.docker.com/engine/reference/commandline/build/
 
-*NOTE:* It seems as if running the stand-alone tag command is still necessary when pushing to Docker Hub. Please see below.
+*NOTE:* It seems as if running the stand-alone tag command, to specify a version, is still necessary when pushing to Docker Hub. Please see below.
 
 ## How To Push An Image To Docker Hub
 1. Run the command in CLI 
@@ -18,7 +18,7 @@
     ```
     * You must first build the image with an appropriate tag before pushing to Docker Hub.
     * *Note:* The tag should probably be a version number... eg ```v0.0.1```
-2. Once complese this can be viewed online: https://hub.docker.com/r/loganconnor44/memento-scraper-client:
+2. Once complese this can be viewed online: https://hub.docker.com/r/loganconnor44/memento-scraper-client
 
 ## How To Run A Docker Image In Detached Mode - preferred method
 1. Run the command in CLI 

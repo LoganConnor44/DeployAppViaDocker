@@ -1,7 +1,10 @@
 # This Is My First Time Running This Application
 
 ## Spin Up The Containers
-1. Copy the ```docker-compose.yml``` file in this directory into a directory on your machine.
+1. Clone the following repository
+    ```bash
+    git clone https://github.com/LoganConnor44/MementoScraperApi.git
+    ```
 2. ```cd``` into the directory you created in step 1.
 3. Run the following in a CLI
     ```bash
@@ -22,7 +25,7 @@
         ```
     * Create a db view. This file is saved in the ```memento-scraper-api``` repo. [Located Here.](https://github.com/LoganConnor44/MementoScraperApi/blob/master/Database/DbViews.sql) The below command assumes that you saved the file in db-scripts, which is a child directory under this one.
         ```bash
-        docker exec -i memento-scraper-db mysql -uroot -proot MementoScraperDatabase < db-scripts/DbViews.sql
+        docker exec -i memento-scraper-db mysql -uroot -proot MementoScraperDatabase < Database/DbViews.sql
         ```
 
 # I Have Ran This Application Before And There Are No Changes To The Database Structure
