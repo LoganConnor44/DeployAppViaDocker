@@ -9,6 +9,8 @@
     * This tells Docker to build an image with the name <YOUR_IMAGE_NAME_HERE> from this current directory.
     * https://docs.docker.com/engine/reference/commandline/build/
 
+*NOTE:* It seems as if running the stand-alone tag command is still necessary when pushing to Docker Hub. Please see below.
+
 ## How To Push An Image To Docker Hub
 1. Run the command in CLI 
     ```bash
@@ -84,7 +86,7 @@ You get the long container ID for your image and then are kicked back to your te
 1. ```cd``` into the directory with the ```docker-compose.yml``` file.
 2. Run the command in CLI 
     ```bash
-    docker-compose down -volumes
+    docker-compose down --volumes
     ```
     * This will remove any volumes you that have been mounted to the host machine.
     * https://docs.docker.com/compose/reference/down/
